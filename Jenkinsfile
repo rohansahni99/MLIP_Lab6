@@ -19,7 +19,7 @@ pipeline {
                 # sudo /PATH/TO/CONDA init
                 python3 -m venv mlip
                 source mlip/bin/activate
-                pip install pytest numpy pandas scikit-learn
+                pip install requirements.txt
 
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>

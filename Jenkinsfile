@@ -19,13 +19,13 @@ pipeline {
                 # sudo /PATH/TO/CONDA init
                 pythons3 -m venv mlip
                 source mlip/bin/activate
-                pip install -r requirements.txt
+                pip install pytest numpy pandas scikit-learn
 
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
                 pytest
 
-                echo 'pytest not runned'
+                #echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
                 deactivate
                 '''

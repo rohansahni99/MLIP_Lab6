@@ -17,9 +17,10 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 # sudo /PATH/TO/CONDA init
+                pythons3 -m venv mlip
                 source mlip/bin/activate
                 pip install -r requirements.txt
-                pip show pandas || (echo 'pandas not found, installing manually...' && pip install pandas)
+
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
                 pytest
